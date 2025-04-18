@@ -1,4 +1,4 @@
-// Copyright (c) 2023 Ridhan Fadhilah
+// Copyright (c) 2025 Ridhan Fadhilah
 // License: MIT (https://opensource.org/licenses/MIT)
 package main
 
