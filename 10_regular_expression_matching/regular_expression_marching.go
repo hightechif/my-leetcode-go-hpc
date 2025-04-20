@@ -26,8 +26,7 @@ func isMatch(s string, p string) bool {
 			if pc == '*' {
 				// Case 1: match zero of preceding element
 				// Case 2: match one or more of preceding element
-				dp[i][j] = dp[i][j-2] ||
-					(dp[i-1][j] && (s[i-1] == p[j-2] || p[j-2] == '.'))
+				dp[i][j] = dp[i][j-2] || (dp[i-1][j] && (s[i-1] == p[j-2] || p[j-2] == '.'))
 			} else {
 				dp[i][j] = dp[i-1][j-1] && (sc == pc || pc == '.')
 			}
